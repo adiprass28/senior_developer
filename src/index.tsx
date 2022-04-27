@@ -1,12 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import Hello from './Hello';
+import CardList from './CardList'
+import { robots } from './robots'
 import reportWebVitals from './reportWebVitals'
+import 'tachyons'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
-    <Hello name={28}/>
+    <CardList robots={robots}/>
 )
 
 reportWebVitals()
